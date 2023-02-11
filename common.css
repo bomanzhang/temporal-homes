@@ -5,8 +5,10 @@
 
 :root {
     --web-margin: 2em;
-    --large-heading: 2.2em;
+    --large-heading: 2.6em;
+    --large-heading-line-height: 2em;
     --body-copy: 1.2em;
+    --body-copy-line-height: 1.2em;
 }
 
 body {
@@ -19,15 +21,17 @@ img {
 
 h1, h2, p {
     font-family: 'helveticaneue', sans-serif;
+    line-height:
 }
 
 h1 {
     font-size: var(--large-heading);
+    line-height: var(--large-heading-line-height);
     font-weight: 500;
 }
 
 p {
     font-size: var(--body-copy);
-    line-height: 1.2em;
+    line-height: var(--body-copy-line-height);
     margin-bottom: 1em;
 }

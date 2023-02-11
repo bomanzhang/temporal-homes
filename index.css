@@ -17,3 +17,15 @@
   .box-4 { grid-area: box-4; }
   .box-5 { grid-area: box-5; }
   .box-6 { grid-area: box-6; }
+
+@media only screen and (max-width:768px) and (min-width:200px) {
+  
+  .container {
+    display: block;
+  }
+
+  .description {
+    padding-bottom: 40px;
+  }
+
+}
