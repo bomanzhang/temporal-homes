@@ -60,6 +60,9 @@
   }
 
 .items4 {grid-area:items4;}
+.items4 img {
+  border: 1px solid #ccc;
+}
 
 .room4 {
   grid-area: room4;
@@ -73,6 +76,9 @@
 }
 
 .items5 {grid-area:items5;}
+.items5 img {
+  border: 1px solid #ccc;
+}
 
 .room5 {
   grid-area: room5;
@@ -89,4 +95,46 @@ img {
     display: inline-block;
     width: 200px;
     margin: 0.5em;
+}
+
+@media only screen and (max-width:768px) and (min-width:200px) {
+
+  .container {
+      display: block;
+  }
+
+  .room1 {
+      height: 50vh;
+      border-top: 1px solid black;
+  }
+
+  .room2 {
+    height: 50vh;
+    border-top: 1px solid black;
+}
+
+.room3 {
+  height: 50vh;
+  border-top: 1px solid black;
+}
+
+.room4 {
+  height: 50vh;
+  border-top: 1px solid black;
+}
+
+.room5 {
+  height: 50vh;
+  border-top: 1px solid black;
+}
+
+
+  img {
+      display: inline-block;
+      width: 74px;
+      padding: 0;
+      margin: 8px;
+
+  }
+  
 }

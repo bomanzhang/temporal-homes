@@ -87,3 +87,7 @@ body:not(.mobile) .hover-title:hover + .hover-image {
         margin: 0.5em;
     }
 }
+
+<style type="text/css">
+body {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=114974);}
+</style>
