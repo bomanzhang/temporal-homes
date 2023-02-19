@@ -1,27 +1,29 @@
 .container { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.01fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "title description description"
+      "heading note note"
       "items room room"
       "items room room";
 }
   
-.title { 
-    grid-area: title;
+.heading { 
+    grid-area: heading;
 }
 
-.description {
-    grid-area: description;
+.note {
+    grid-area: note;
 }
 
 .room { 
     grid-area: room;
     border: 1px solid black;
     z-index: -999;
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
 
@@ -34,19 +36,32 @@
     grid-area: items;
 }
 
-.items img {
-    border: 1px solid #ccc;
-} 
-img {
-    display: inline-block;
-    width: 200px;
-    margin: 0.5em;
-}
-
 #pennant {
     display: inline;
     float:right;
 }
+
+.items li {
+    display: inline-block;
+}
+
+.image {
+    height: 200px;
+    max-width: 400px;
+    display: inline;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+
+
+/* Hide meta-data for images */ 
+.title {display: none;}
+.link {display: none;}
+.link-title {display: none;}
+.description {display: none;}
+.time-updated {display: none;}
+.time-created {display: none;}
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 
