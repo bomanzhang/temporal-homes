@@ -39,6 +39,7 @@
 #pennant {
     display: inline;
     float:right;
+    width: 400px;
 }
 
 .items li {
@@ -54,15 +55,25 @@
 }
 
 
-
 /* Hide meta-data for images */ 
-.title {display: none;}
+.title {
+    display: none;
+    position:block;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-overflow: ellipsis;
+    font-size: 0.8em;
+}
+
+img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
 .link {display: none;}
 .link-title {display: none;}
-.description {display: none;}
-.time-updated {display: none;}
-.time-created {display: none;}
 
+  
 @media only screen and (max-width:768px) and (min-width:200px) {
 
     .container {

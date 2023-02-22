@@ -224,3 +224,32 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 		parseBlocks(data)
 	})
 
+
+const image = document.querySelectorAll('.image')
+const room = document.querySelectorAll('.room')
+
+
+image.forEach(image => {
+	image.addEventListener('dragstart', dragStart)
+	image.addEventListener('dragend', dragEnd)
+	});
+
+let dragImage = null;
+
+function dragStart() {
+    console.log('drag started');
+    dragItem = this;
+    setTimeout(() => this.className = 'invisible', 0)
+};
+
+function dragEnd() {
+    console.log('drag ended');
+  	this.className = 'image'
+  	dragImage = null;
+};
+
+function dragDrop() {
+    console.log('drag dropped');
+    this.append(dragImage);
+};
+
