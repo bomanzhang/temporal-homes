@@ -47,14 +47,14 @@
 }
 
 .image {
-    width: 20vh;
+    width: 25vh;
     height: auto;
     display: inline-block;
     border: 1px solid #ccc;
     margin: 5px;
 }
 
-img {
+picture > img {
     aspect-ratio: 1/1;
 }
 
