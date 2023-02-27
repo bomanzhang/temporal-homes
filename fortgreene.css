@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -17,10 +17,11 @@
   .description { grid-area: description; }
   
   .items1 { grid-area: items1; }
-  .items1 img {
-    border: 1px solid #ccc;
-  }
-  
+  .items1 img {border: 1px solid #ccc;}
+  .items1 li {display: inline-block;}
+  .items1 ul > li:nth-child(n + 3):nth-child(-n + 32) {display:none;}
+  .items1 ul > li:nth-child(n+37) {display:none;}
+
   .room1 { 
     grid-area: room1;
     border: 1px solid black;
@@ -34,6 +35,10 @@
   .items2 img {
     border: 1px solid #ccc;
   }
+  .items2 li {display: inline-block;}
+  .items2 ul > li:nth-child(-n + 25){display:none;}
+  .items2 ul > li:nth-child(n + 27):nth-child(-n + 36) {display:none;}
+  .items2 ul > li:nth-child(n+42) {display:none;}
 
   .room2 { 
     grid-area: room2;
@@ -47,6 +52,10 @@
 }
 
   .items3 { grid-area: items3; }
+  .items3 li {display: inline-block;}
+  .items3 ul > li:nth-child(n + 1):nth-child(-n + 41) {display:none;}
+  .items3 ul > li:nth-child(n+46) {display:none;}
+
   
   .room3 {
     grid-area: room3;
@@ -60,9 +69,11 @@
   }
 
 .items4 {grid-area:items4;}
-.items4 img {
-  border: 1px solid #ccc;
-}
+
+.items4 img {border: 1px solid #ccc;}
+.items4 li {display: inline-block;}
+.items4 ul > li:nth-child(n + 1):nth-child(-n + 13) {display:none;}
+.items4 ul > li:nth-child(n+19) {display:none;}
 
 .room4 {
   grid-area: room4;
@@ -76,9 +87,16 @@
 }
 
 .items5 {grid-area:items5;}
-.items5 img {
-  border: 1px solid #ccc;
-}
+.items5 img {border: 1px solid #ccc;}
+.items5 li {display: inline-block;}
+.items5 ul > li:nth-child(n + 1):nth-child(-n + 18) {display:none;}
+.items5 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
+.items5 ul > li:nth-child(n+33):nth-child(-n + 46) {display:none;}
+.items5 ul > li:nth-child(n+48) {display:none;}
+
+
+
+
 
 .room5 {
   grid-area: room5;

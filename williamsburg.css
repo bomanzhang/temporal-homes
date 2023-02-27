@@ -112,8 +112,8 @@
 .room4 img {border: 1px solid #ccc;}
 .room4 li {display: inline-block;}
 .room4 ul > li:nth-child(n + 1):nth-child(-n + 18) {display:none;}
-.room4 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
-.room4 ul > li:nth-child(n+33) {display:none;}
+.items4 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
+.items4 ul > li:nth-child(n+33) {display:none;}
 
 img {
     display: inline-block;
