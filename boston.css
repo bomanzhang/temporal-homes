@@ -20,16 +20,31 @@
 .items1 img {
   border: 1px solid #ccc;
 }
+
+.items1 li {
+  display: inline-block;
+}
+
+.items1 ul > li:nth-child(n + 4):nth-child(-n + 6) {display:none;}
+.items1 ul > li:nth-child(n+12) {display:none;}
   
 .room1 { 
   grid-area: room1;
   border: 1px solid black;
+  padding: 0.5em;
 }
   
 .room1 p {
   color: #ccc;
-  padding: 1em;
+  padding: 0.5em;
 }
+
+.room1 li {
+  display: inline-block;
+}
+
+.room1 ul > li:nth-child(n + 4):nth-child(-n + 6) {display:none;}
+.room1 ul > li:nth-child(n+12) {display:none;}
 
 #table {
   display: block;
@@ -37,12 +52,6 @@
   padding-left: 10vw;
 }
 
-.items1 li {
-  display: inline-block;
-}
-
-.items1 ul > li:nth-child(n + 4):nth-child(-n + 6) {display:none;}
-.items1 ul > li:nth-child(n+11) {display:none;}
 
 
 /* kitchen */ 
@@ -51,16 +60,9 @@
   border: 1px solid #ccc;
 }
 
-.room2 { 
-  grid-area: room2;
-  border: 1px solid black;
-  border-top: 0;
-  z-index: -999;
-}
-  
-.room2 p {
-    color: #ccc;
-    padding: 1em;
+.items2 p {
+  color: #ccc;
+  padding: 0.5em;
 }
 
 .items2 li {
@@ -70,6 +72,42 @@
 .items2 ul > li:nth-child(-n + 3) {display:none;}
 .items2 ul > li:nth-child(n + 6):nth-child(-n + 13) {display:none;}
 .items2 ul > li:nth-child(n+18) {display:none;}
+
+
+.room2 { 
+  grid-area: room2;
+  border: 1px solid black;
+  border-top: 0;
+  z-index: -999;
+  padding: 0.5em;
+}
+  
+.room2 p {
+  color: #ccc;
+  padding: 0.5em;
+}
+
+.room2 li {
+  display: inline-block;
+}
+
+.room2 ul > li:nth-child(-n + 3) {display:none;}
+.room2 ul > li:nth-child(n + 6):nth-child(-n + 13) {display:none;}
+.room2 ul > li:nth-child(n+18) {display:none;}
+
+#mugs {
+  display: block;
+  float: right;
+  width: 50%;
+  padding-right: 10vw;
+}
+
+#crockpot {
+  display: block;
+  width: 50%;
+  padding-right: 10vw;
+}
+
 
 
 .image {
@@ -88,26 +126,68 @@ img:hover{
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 
-  .container {
-      display: block;
-  }
-
-  .room1 {
-      height: 50vh;
-      border-top: 1px solid black;
-  }
-
-  .room2 {
-    height: 50vh;
-    border-top: 1px solid black;
+  body {
+    margin: 1em;
 }
 
-  img {
-      display: inline-block;
-      width: 74px;
-      padding: 0;
-      margin: 8px;
+.container {
+    display: inline;
+    overflow-x: hidden;  
+}
 
+.room1 {
+    border-top: 1px solid black;
+    margin-bottom: 1em;
+    
   }
-  
+
+.room2 {
+  border-top: 1px solid black;
+}
+
+.room1 li {
+  display: inline-block;
+  width: 30%;
+}
+
+.room2 li {
+  display: inline-block;
+  width: 30%;
+}
+
+.heading {
+  margin-left:5px;
+}
+
+.note {
+  margin-left:5px;
+}
+
+ul {
+max-width: 100%;
+}
+
+.items1 li {
+  display: inline-block;
+  width: 30%;
+}
+
+.items2 li {
+  display: inline-block;
+  width: 30%;
+}
+
+img {
+  display: inline-block;
+}
+
+.image {
+  display: inline;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.hover-title {
+  float: right;
+}
 }
