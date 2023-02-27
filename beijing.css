@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.01fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -36,28 +36,116 @@
 .items img {
     border: 1px solid #ccc;
 } 
+
 img {
     display: inline-block;
     width: 200px;
     margin: 0.5em;
 }
 
+.items li {
+    display: inline-block;
+}
+
+.image {
+    width: 25vh;
+    height: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+ul > li:nth-child(n+2):nth-child(-n+6) {display:none;}
+ul > li:nth-child(8) {display:none;}
+ul > li:nth-child(n+10):nth-child(-n+13) {display:none;}
+ul > li:nth-child(n+15):nth-child(-n+18) {display:none;}
+ul > li:nth-child(n+20) {display:none;}
+
+.room img {
+    border: 1px solid #ccc;
+} 
+
+.room li {
+    display: inline-block;
+}
+
+#childbed img {
+  display: inline;
+  width: 50% !important;
+  border: none !important;
+}
+
+#softtoys img {
+    display: relative;
+      width: 30% !important;
+      border: none !important;
+      float: right;
+    }
+
 @media only screen and (max-width:768px) and (min-width:200px) {
 
+    body {
+        margin: 1em;
+    }
+
     .container {
-        display: block;
+        display: inline;
+        overflow-x: hidden;  
     }
 
     .room {
-        height: 50vh;
+        max-width: 100%;
+        margin-top:2vh;
     }
 
-    img {
+    .room li {
         display: inline-block;
-        width: 74px;
-        padding: 0;
-        margin: 8px;
+        width: 30%;
+    }
 
+   .heading {
+        margin-left:5px;
+   }
+
+   .note {
+        margin-left:5px;
+   }
+    
+   ul {
+    max-width: 100%;
+   }
+
+    .items li {
+        display: inline-block;
+        width: 30%;
     }
     
+    img {
+        display: inline-block;
+    }
+
+    .image {
+        display: inline;
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    #softtoys img {
+        display: relative;
+          width: 50% !important;
+        }
+
+    #childbed img {
+        display: inline;
+        width: 80% !important;
+            }
+
+    .hover-title {
+        float: right;
+    }
   }

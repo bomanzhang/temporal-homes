@@ -22,8 +22,8 @@
 
 .items1 img {border: 1px solid #ccc;}
 .items1 li {display: inline-block;}
-.items1 ul > li:nth-child(n + 4):nth-child(-n + 7) {display:none;}
-.items1 ul > li:nth-child(n+10) {display:none;}
+.items1 ul > li:nth-child(n + 3):nth-child(-n + 22) {display:none;}
+.items1 ul > li:nth-child(n+25) {display:none;}
 
 .room1 { 
     grid-area: room1;
@@ -37,16 +37,15 @@
 
 .room1 img {border: 1px solid #ccc;}
 .room1 li {display: inline-block;}
-.room1 ul > li:nth-child(n + 4):nth-child(-n + 7) {display:none;}
-.room1 ul > li:nth-child(n+10) {display:none;}
+.room1 ul > li:nth-child(n + 3):nth-child(-n + 22) {display:none;}
+.room1 ul > li:nth-child(n+25) {display:none;}
 
 
 /* living room */ 
   .items2 img {border: 1px solid #ccc;}
   .items2 li {display: inline-block;}
-  .items2 ul > li:nth-child(n + 1):nth-child(-n + 9) {display:none;}
-  .items2 ul > li:nth-child(n + 14):nth-child(-n + 20) {display:none;}
-  .items2 ul > li:nth-child(n+22) {display:none;}
+  .items2 ul > li:nth-child(n + 1):nth-child(-n +25) {display:none;}
+  .items2 ul > li:nth-child(n+30) {display:none;}
 
   .room2 { 
     grid-area: room2;
@@ -61,9 +60,8 @@
 
 .room2 img {border: 1px solid #ccc;}
 .room2 li {display: inline-block;}
-.room2 ul > li:nth-child(n + 1):nth-child(-n + 9) {display:none;}
-.room2 ul > li:nth-child(n + 14):nth-child(-n + 20) {display:none;}
-.room2 ul > li:nth-child(n+22) {display:none;}
+.room2  ul > li:nth-child(n + 1):nth-child(-n +25) {display:none;}
+.room2  ul > li:nth-child(n+30) {display:none;}
 
 
 .items3 img {border: 1px solid #ccc;}
@@ -95,9 +93,9 @@
   display: inline-block;
 }
 
-.items4 ul > li:nth-child(n + 1):nth-child(-n + 5) {display:none;}
-.items4 ul > li:nth-child(n + 8):nth-child(-n + 18) {display:none;}
-.items4 ul > li:nth-child(n+21) {display:none;}
+.items4 ul > li:nth-child(n + 1):nth-child(-n + 18) {display:none;}
+.items4 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
+.items4 ul > li:nth-child(n+33) {display:none;}
 
 .room4 {
   grid-area: room4;
@@ -113,9 +111,9 @@
 
 .room4 img {border: 1px solid #ccc;}
 .room4 li {display: inline-block;}
-.room4 ul > li:nth-child(n + 1):nth-child(-n + 5) {display:none;}
-.room4 ul > li:nth-child(n + 8):nth-child(-n + 18) {display:none;}
-.room4 ul > li:nth-child(n+21) {display:none;}
+.room4 ul > li:nth-child(n + 1):nth-child(-n + 18) {display:none;}
+.room4 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
+.room4 ul > li:nth-child(n+33) {display:none;}
 
 img {
     display: inline-block;
@@ -123,70 +121,6 @@ img {
     margin: 0.5em;
 }
 
-/* bedroom static images */
-
-#hisbed img {
-  display: relative;
-  width: 70% !important;
-  border: none !important;
-}
-
-#bedtable img {
-  display: relative;
-  width: 20%;
-  border: none !important;
-}
-
-#malesofa img {
-  width: 60% !important;
-  border: none !important;
-}
-#malesofa {
-  display: relative;
-}
-
-#weights img {
-  display: relative;
-  width: 20% !important;
-  float:right;
-  padding-right: 10px;
-  border: none !important;
-}
-
-#hdtv img {
-  display: relative;
-  width: 50% !important;
-  border: none !important;
-}
-
-/* kitchen static images */
-#pots img {
-  display: inline-block;
-  width: 50% !important;
-  float: right;
-}
-
-#coffeemachine img {
-  display: relative;
-  width: 30% !important;
-}
-
-/*bathroom static images */
-#aesop img {
-  display: inline-block;
-  width: 10% !important;
-  float: right;
-}
-
-#towels img {
-  display: relative;
-  width: 30% !important;
-}
-
-#shave img {
-  display: relative;
-  width: 10% !important;
-}
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 
