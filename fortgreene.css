@@ -12,63 +12,108 @@
       "items5 room5 room5";
   }
   
-  .title { grid-area: title; }
-  
-  .description { grid-area: description; }
-  
-  .items1 { grid-area: items1; }
-  .items1 img {border: 1px solid #ccc;}
-  .items1 li {display: inline-block;}
-  .items1 ul > li:nth-child(n + 3):nth-child(-n + 32) {display:none;}
-  .items1 ul > li:nth-child(n+37) {display:none;}
+.title { grid-area: title;}
+.description { grid-area: description;}
+.items1 { grid-area: items1;}
+.items2 { grid-area: items2;}
+.items3 { grid-area: items3;}
+.items4 {grid-area:items4;}
+.items5 {grid-area:items5;}  
 
-  .room1 { 
-    grid-area: room1;
-    border: 1px solid black;
+/* bedroom */
+
+.items1 img {border: 1px solid #ccc;}
+.items1 li {display: inline-block;}
+.items1 ul > li:nth-child(n + 3):nth-child(-n + 32) {display:none;}
+.items1 ul > li:nth-child(n+37) {display:none;}
+
+.room1 { 
+  grid-area: room1;
+  border: 1px solid black;
 }
   
 .room1 p {
-    color: #ccc;
-    padding: 1em;
+  color: #ccc;
+  padding: 1em;
 }
-  .items2 { grid-area: items2; }
-  .items2 img {
-    border: 1px solid #ccc;
+
+.room1 img {border: 1px solid #ccc;}
+.room1 li {display: inline-block;}
+.room1 ul > li:nth-child(n + 3):nth-child(-n + 32) {display:none;}
+.room1 ul > li:nth-child(n+37) {display:none;}
+
+#monkee {
+  border: none !important;
+  float: left;
+  display: inline;
+}
+
+/* living room */
+
+.items2 img {border: 1px solid #ccc;}
+.items2 li {display: inline-block;}
+.items2 ul > li:nth-child(-n + 25){display:none;}
+.items2 ul > li:nth-child(n + 27):nth-child(-n + 36) {display:none;}
+.items2 ul > li:nth-child(n+42) {display:none;}
+
+.room2 { 
+  grid-area: room2;
+  border: 1px solid black;
+  border-top: 0;
+}
+
+.room2 p {
+  color: #ccc;
+  padding: 1em;
+}
+
+.room2 img {border: 1px solid #ccc;}
+.room2 li {display: inline-block;}
+.room2 ul > li:nth-child(-n + 25){display:none;}
+.room2 ul > li:nth-child(n + 27):nth-child(-n + 36) {display:none;}
+.room2 ul > li:nth-child(n+42) {display:none;}
+
+#guitar {
+  border: none !important;
+  float: right;
+  display: inline;
+}
+
+#guitar img {
+  width: 30% !important;
+}
+
+/* office */
+
+.items3 li {display: inline-block;}
+.items3 img {border: 1px solid #ccc;}
+.items3 ul > li:nth-child(n + 1):nth-child(-n + 41) {display:none;}
+.items3 ul > li:nth-child(n+46) {display:none;}
+
+.room3 {
+  grid-area: room3;
+  border: 1px solid black;
+  border-top: 0;
+}
+
+.room3 p {
+  color: #ccc;
+  padding: 1em;
   }
-  .items2 li {display: inline-block;}
-  .items2 ul > li:nth-child(-n + 25){display:none;}
-  .items2 ul > li:nth-child(n + 27):nth-child(-n + 36) {display:none;}
-  .items2 ul > li:nth-child(n+42) {display:none;}
 
-  .room2 { 
-    grid-area: room2;
-    border: 1px solid black;
-    border-top: 0;
-}
-  
-  .room2 p {
-    color: #ccc;
-    padding: 1em;
+.room3 li {display: inline-block;}
+.room3 img {border: 1px solid #ccc;}
+.room3 ul > li:nth-child(n + 1):nth-child(-n + 41) {display:none;}
+.room3 ul > li:nth-child(n+46) {display:none;}
+
+#officechair {
+  border: none !important;
+  padding-right: 2em;
+  display: inline;
+  float: right;
 }
 
-  .items3 { grid-area: items3; }
-  .items3 li {display: inline-block;}
-  .items3 ul > li:nth-child(n + 1):nth-child(-n + 41) {display:none;}
-  .items3 ul > li:nth-child(n+46) {display:none;}
-
-  
-  .room3 {
-    grid-area: room3;
-    border: 1px solid black;
-    border-top: 0;
-}
-
-  .room3 p {
-    color: #ccc;
-    padding: 1em;
-  }
-
-.items4 {grid-area:items4;}
+/* kitchen */ 
 
 .items4 img {border: 1px solid #ccc;}
 .items4 li {display: inline-block;}
@@ -86,17 +131,24 @@
   padding: 1em;
 }
 
-.items5 {grid-area:items5;}
+.room4 img {border: 1px solid #ccc;}
+.room4 li {display: inline-block;}
+.room4 ul > li:nth-child(n + 1):nth-child(-n + 13) {display:none;}
+.room4 ul > li:nth-child(n+19) {display:none;}
+
+#catmug {
+  display: inline;
+  float: left;
+}
+
 .items5 img {border: 1px solid #ccc;}
 .items5 li {display: inline-block;}
-.items5 ul > li:nth-child(n + 1):nth-child(-n + 18) {display:none;}
+.items5 ul > li:nth-child(n + 1):nth-child(-n + 20) {display:none;}
 .items5 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
-.items5 ul > li:nth-child(n+33):nth-child(-n + 46) {display:none;}
+.items5 ul > li:nth-child(n+33):nth-child(-n + 45) {display:none;}
 .items5 ul > li:nth-child(n+48) {display:none;}
 
-
-
-
+/* bathroom */
 
 .room5 {
   grid-area: room5;
@@ -108,6 +160,13 @@
   color: #ccc;
   padding: 1em;
 }
+
+.room5 img {border: 1px solid #ccc;}
+.room5 li {display: inline-block;}
+.room5 ul > li:nth-child(n + 1):nth-child(-n + 18) {display:none;}
+.room5 ul > li:nth-child(n + 21):nth-child(-n + 29) {display:none;}
+.room5 ul > li:nth-child(n+33):nth-child(-n + 46) {display:none;}
+.room5 ul > li:nth-child(n+47) {display:none;}
 
 img {
     display: inline-block;
