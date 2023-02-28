@@ -30,11 +30,12 @@
 .room1 { 
   grid-area: room1;
   border: 1px solid black;
+  padding:1em;
+
 }
   
 .room1 p {
   color: #ccc;
-  padding: 1em;
 }
 
 .room1 img {border: 1px solid #ccc;}
@@ -42,11 +43,7 @@
 .room1 ul > li:nth-child(n + 3):nth-child(-n + 32) {display:none;}
 .room1 ul > li:nth-child(n+37) {display:none;}
 
-#monkee {
-  border: none !important;
-  float: left;
-  display: inline;
-}
+
 
 /* living room */
 
@@ -60,11 +57,12 @@
   grid-area: room2;
   border: 1px solid black;
   border-top: 0;
+  padding:1em;
+
 }
 
 .room2 p {
   color: #ccc;
-  padding: 1em;
 }
 
 .room2 img {border: 1px solid #ccc;}
@@ -73,15 +71,7 @@
 .room2 ul > li:nth-child(n + 27):nth-child(-n + 36) {display:none;}
 .room2 ul > li:nth-child(n+42) {display:none;}
 
-#guitar {
-  border: none !important;
-  float: right;
-  display: inline;
-}
 
-#guitar img {
-  width: 30% !important;
-}
 
 /* office */
 
@@ -94,11 +84,11 @@
   grid-area: room3;
   border: 1px solid black;
   border-top: 0;
+  padding:1em;
 }
 
 .room3 p {
   color: #ccc;
-  padding: 1em;
   }
 
 .room3 li {display: inline-block;}
@@ -106,12 +96,7 @@
 .room3 ul > li:nth-child(n + 1):nth-child(-n + 41) {display:none;}
 .room3 ul > li:nth-child(n+46) {display:none;}
 
-#officechair {
-  border: none !important;
-  padding-right: 2em;
-  display: inline;
-  float: right;
-}
+
 
 /* kitchen */ 
 
@@ -124,11 +109,12 @@
   grid-area: room4;
   border: 1px solid black;
   border-top: 0;
+  padding:1em;
+
 }
 
 .room4 p {
   color: #ccc;
-  padding: 1em;
 }
 
 .room4 img {border: 1px solid #ccc;}
@@ -136,10 +122,6 @@
 .room4 ul > li:nth-child(n + 1):nth-child(-n + 13) {display:none;}
 .room4 ul > li:nth-child(n+19) {display:none;}
 
-#catmug {
-  display: inline;
-  float: left;
-}
 
 .items5 img {border: 1px solid #ccc;}
 .items5 li {display: inline-block;}
@@ -154,11 +136,12 @@
   grid-area: room5;
   border: 1px solid black;
   border-top: 0;
+  padding:1em;
+
 }
 
 .room5 p {
   color: #ccc;
-  padding: 1em;
 }
 
 .room5 img {border: 1px solid #ccc;}
@@ -168,11 +151,50 @@
 .room5 ul > li:nth-child(n+33):nth-child(-n + 46) {display:none;}
 .room5 ul > li:nth-child(n+47) {display:none;}
 
-img {
-    display: inline-block;
-    width: 200px;
-    margin: 0.5em;
+.image-thumb {
+  width: 25vh;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 5px;
 }
+
+#monkee {
+  width: 25vh;
+  border: none !important;
+  display: inline;
+  float: left;
+  margin-left: 1em;
+}
+
+#guitar {
+  border: none !important;
+  float: right;
+  display: inline;
+}
+
+#guitar img {
+  width: 30% !important;
+}
+
+#officechair {
+  width: 30%;
+  border: none !important;
+  padding-right: 2em;
+  display: inline;
+  float: right;
+  border: none !important;
+
+}
+
+#catmug {
+  width: 25vh;
+  display: inline;
+  float: left;
+  margin-left: 4em;
+  border: none !important;
+}
+
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 
@@ -233,19 +255,39 @@ img {
   }
   
   #monkee {
-    width: 30%;
+    float: none;
+  }
+
+  #monkee img {
+    border: none !important;
+    width: 30% !important;
   }
   
   #guitar {
-    width: 50%;
+    float: none;
+  }
+
+  #guitar img {
+    border: none !important;
+    width: 30% !important;
   }
 
   #officechair {
-    width: 30%;
+    float: none;
   }
+  #officechair img {
+    border: none !important;
+    width: 30% !important;
+  }
+
   
   #catmug {
-    width: 30%;
+    float: none;
+  }
+
+  #catmug img {
+    border: none !important;
+    width: 30% !important;
   }
     
   .hover-title {

@@ -18,6 +18,15 @@
   .items3 { grid-area: items3; }
   .items4 {grid-area:items4;}
 
+
+  .image-thumb {
+    width: 25vh;
+    height: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 5px;
+  }
+  
 /* bedroom */ 
 
 .items1 img {border: 1px solid #ccc;}
@@ -28,11 +37,12 @@
 .room1 { 
     grid-area: room1;
     border: 1px solid black;
+    padding:1em;
+
 }
   
 .room1 p {
     color: #ccc;
-    padding: 1em;
 }
 
 .room1 img {border: 1px solid #ccc;}
@@ -51,11 +61,12 @@
     grid-area: room2;
     border: 1px solid black;
     border-top: 0;
+    padding:1em;
+
 }
   
   .room2 p {
     color: #ccc;
-    padding: 1em;
 }
 
 .room2 img {border: 1px solid #ccc;}
@@ -73,11 +84,12 @@
     grid-area: room3;
     border: 1px solid black;
     border-top: 0;
+    padding:1em;
+
 }
 
 .room3 p {
     color: #ccc;
-    padding: 1em;
 }
 
 .room3 img {border: 1px solid #ccc;}
@@ -102,11 +114,12 @@
   border: 1px solid black;
   border-top: 0;
   z-index: -999;
+  padding:1em;
+
 }
 
 .room4 p {
   color: #ccc;
-  padding: 1em;
 }
 
 .room4 img {border: 1px solid #ccc;}
@@ -114,13 +127,6 @@
 .room4 ul > li:nth-child(n + 1):nth-child(-n + 5) {display:none;}
 .room4 ul > li:nth-child(n + 8):nth-child(-n + 18) {display:none;}
 .room4 ul > li:nth-child(n+21) {display:none;}
-
-img {
-    display: inline-block;
-    width: 200px;
-    margin: 0.5em;
-}
-
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 

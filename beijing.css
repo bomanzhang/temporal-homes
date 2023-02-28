@@ -21,12 +21,12 @@
     grid-area: room;
     border: 1px solid black;
     z-index: -999;
+    padding:1em;
 
 }
 
 .room p {
     color: #ccc;
-    padding: 1em;
 }
 
 .items { 
@@ -37,27 +37,16 @@
     border: 1px solid #ccc;
 } 
 
-img {
-    display: inline-block;
-    width: 200px;
-    margin: 0.5em;
-}
-
 .items li {
     display: inline-block;
 }
 
-.image {
+.image-thumb {
     width: 25vh;
     height: auto;
     display: inline-block;
     border: 1px solid #ccc;
     margin: 5px;
-}
-
-img:hover{
-    cursor: pointer;
-    opacity: 0.5;
 }
 
 ul > li:nth-child(n+2):nth-child(-n+6) {display:none;}
@@ -142,8 +131,10 @@ ul > li:nth-child(n+20) {display:none;}
 
     #childbed img {
         display: inline;
-        width: 80% !important;
+        width: 70% !important;
+        padding-bottom: 10px;
             }
+
 
     .hover-title {
         float: right;

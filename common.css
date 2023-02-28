@@ -162,4 +162,27 @@ body:not(.mobile) .hover-title:hover + .hover-image {
     .hover-title {
     float: none;
     }
+
+    .image-block aside {
+        display:none;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 9999;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 30%;
+    }
+
+    .image-block aside h3 {
+        color: black;
+        font-family: 'Helvetica Neue', sans-serif;
+        text-align: center;
+        padding-top: 2em;
+    }
+    
 }

@@ -37,11 +37,12 @@
 .room1 { 
     grid-area: room1;
     border: 1px solid black;
+    padding:1em;
+
 }
   
 .room1 p {
     color: #ccc;
-    padding: 1em;
 }
 
 .room1 img {border: 1px solid #ccc;}
@@ -61,11 +62,12 @@
     grid-area: room2;
     border: 1px solid black;
     border-top: 0;
+    padding:1em;
+
 }
   
   .room2 p {
     color: #ccc;
-    padding: 1em;
 }
 
 .room2 img {border: 1px solid #ccc;}
@@ -84,11 +86,12 @@
     grid-area: room3;
     border: 1px solid black;
     border-top: 0;
+    padding:1em;
+
 }
 
 .room3 p {
     color: #ccc;
-    padding: 1em;
 }
 
 .room3 img {border: 1px solid #ccc;}
@@ -113,11 +116,12 @@
   border: 1px solid black;
   border-top: 0;
   z-index: -999;
+  padding:1em;
+
 }
 
 .room4 p {
   color: #ccc;
-  padding: 1em;
 }
 
 .room4 img {border: 1px solid #ccc;}
@@ -292,4 +296,86 @@
     float: right;
   }
 
+  /* bedroom static images */
+  #hisbed {display: inline;}
+
+#hisbed img {
+  float: none;
+  padding-bottom: 1em;
+}
+
+#bedtable {
+  display: inline;
+
+}
+#bedtable img {
+  float: none;
+  padding-bottom: 1em;
+}
+
+#malesofa { display:inline;}
+
+#malesofa img {
+  float: none;
+}
+
+#weights {display:inline;}
+
+#weights img {
+  float: none;
+}
+
+#hdtv img {
+  float: none;
+  padding-bottom: 1em;
+}
+
+#hdtv {display:inline;}
+
+/* kitchen static images */
+#pots img {
+  float: none;
+  padding-bottom:1em;
+
+
+}
+
+#pots {display:inline;}
+
+#coffeemachine img {
+  float: none;
+  padding-bottom:1em;
+
+}
+
+#coffeemachine {display:inline;}
+
+/*bathroom static images */
+#aesop img {
+  float: none;
+  padding-bottom:1em;
+  width: 20% !important;
+
+
+}
+
+#aesop {display:inline;}
+
+#towels img {
+  float: none;
+  padding-bottom:1em;
+  width: 0% !important;
+
+
+}
+
+#towels {display:inline;}
+
+#shave img {
+  float: none;
+  padding-bottom:1em;
+  width: 20% !important;
+
+}
+#shave  {display:inline;}
 }
