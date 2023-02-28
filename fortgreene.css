@@ -176,42 +176,80 @@ img {
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 
+  body {
+    margin: 1em;
+  }
+
   .container {
-      display: block;
+    display: inline;
+    overflow-x: hidden;  
+  }
+
+  .room li {
+    display: inline-block;
+    width: 30%; 
+  }
+
+  .heading {
+    margin-left:5px;  
+  }
+
+  .note {
+    margin-left:5px;
+  }
+
+  ul {
+  max-width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    width: 30%;
   }
 
   .room1 {
-      height: 50vh;
-      border-top: 1px solid black;
+    margin-bottom: 1em;
+    border-top: 1px solid black;
   }
 
   .room2 {
-    height: 50vh;
+    margin-bottom: 1em;
     border-top: 1px solid black;
-}
-
-.room3 {
-  height: 50vh;
-  border-top: 1px solid black;
-}
-
-.room4 {
-  height: 50vh;
-  border-top: 1px solid black;
-}
-
-.room5 {
-  height: 50vh;
-  border-top: 1px solid black;
-}
-
-
-  img {
-      display: inline-block;
-      width: 74px;
-      padding: 0;
-      margin: 8px;
-
   }
   
+  .room3 {
+    margin-bottom: 1em;
+    border-top: 1px solid black;
+  }
+
+  .room4 {
+    margin-bottom: 1em;
+    border-top: 1px solid black;
+  }
+
+  .room5 {
+    margin-bottom: 1em;
+    border-top: 1px solid black;
+  }
+  
+  #monkee {
+    width: 30%;
+  }
+  
+  #guitar {
+    width: 50%;
+  }
+
+  #officechair {
+    width: 30%;
+  }
+  
+  #catmug {
+    width: 30%;
+  }
+    
+  .hover-title {
+    float: right;
+}
+
 }

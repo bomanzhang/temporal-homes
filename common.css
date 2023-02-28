@@ -37,11 +37,74 @@ p {
     margin-bottom: 1em;
 }
 
+p a:hover {
+    cursor: pointer;
+}
+
 .handwritten {
     font-family: 'Mynerve', cursive;
     font-size: var(--body-copy);
     line-height: var(--body-copy-line-height);
-    margin-bottom: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1;
+    height: 2em;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+      }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+.title h1:hover {
+    font-family: 'Mynerve', cursive;
+    font-size: 2.8em;
+}
+
+.heading h1:hover {
+    font-family: 'Mynerve', cursive;
+    font-size: 2.8em;
+}
+
+/* aside viewing */
+
+.image-thumb:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.image-block aside {
+    display:none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 9999;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+}
+
+.image-block aside img {
+    object-fit: contain;
+    border: none;
+}
+
+.image-block aside h3 {
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.image-block.active aside {
+    display: block;
 }
 
 /* Move hover */

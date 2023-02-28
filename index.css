@@ -18,8 +18,21 @@
   .box-5 { grid-area: box-5; }
   .box-6 { grid-area: box-6; }
 
+  .channel-owner {
+    display: inline;
+    font-size: 2em;
+  }
+  .channel-collaborator{
+    display: inline;
+    font-size: 2em;
+  }
+
 @media only screen and (max-width:768px) and (min-width:200px) {
   
+  body {
+    margin: 1em;
+  }
+
   .container {
     display: block;
   }

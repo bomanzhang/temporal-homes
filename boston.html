@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="boston.css">
     <script defer src="script.js"></script>
+    <script defer src="main.js"></script>
+
   </head>
   <body>
 
@@ -28,16 +30,18 @@
 
       <div class="items1">
         <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"></ul>
-          <template id="image-block">
-            <li>
-              <figure class="image-block">
-                <picture>
-                  <source class="image-display">
-                  <img class="image" draggable="true">
-                </picture>
-              </figure>
-            </li>
-          </template>
+      <template id="image-block">
+          <li class="image-block">
+             <figure>
+                <img class="image-thumb">
+             </figure>
+            </figure>
+            <aside>
+              <img class="image">
+              <h3 class="title"></h3>
+            </aside>
+          </li>
+      </template>  
           </div>
 
       <div class="room1">
@@ -47,16 +51,18 @@
 
       <div class="items2">
         <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"></ul>
-          <template id="image-block">
-            <li>
-              <figure class="image-block">
-                <picture>
-                  <source class="image-display">
-                  <img class="image" draggable="true">
-                </picture>
+        <template id="image-block">
+            <li class="image-block">
+               <figure>
+                  <img class="image-thumb">
+               </figure>
               </figure>
+              <aside>
+                <img class="image">
+                <h3 class="title"></h3>
+              </aside>
             </li>
-          </template>
+        </template> 
       </div>
           <div class="room2">
             <p>Kitchen</p>
@@ -68,6 +74,5 @@
         <div class="hover-title"><a href="hellskitchen.html"><h1>Move</h1></a></div>
         <div class="hover-image"><img src="assets/img/box-open.png" id="boxopen" alt="open cardboard box"></div>
     
-    <script src="index.js"></script>
   </body>
 </html>

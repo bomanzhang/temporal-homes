@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="boston.css">
     <script defer src="script.js"></script>
+    <script defer src="main.js"></script>
+
   </head>
   <body>
 
@@ -23,7 +25,7 @@
       <div class="description">
         <div class="handwritten">My first apartment with Lauren and Sophia!</div>
           <p>206 Buttonwood St, Boston MA United States 02125</p>
-          <a href="boston-placed.html"><p>Items placed!</p></a>   
+          <a href="boston.html"><p>Remove items?</p></a>   
         </div>
 
       <div class="items1">
@@ -34,15 +36,17 @@
           <div id="table"><img src="assets/img/boston-table.png" alt="wooden desk table"></div>
           <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"></ul>
           <template id="image-block">
-            <li>
-              <figure class="image-block">
-                <picture>
-                  <source class="image-display">
-                  <img class="image" draggable="true">
-                </picture>
-              </figure>
-            </li>
-          </template>
+              <li class="image-block">
+                 <figure>
+                    <img class="image-thumb">
+                 </figure>
+                </figure>
+                <aside>
+                  <img class="image">
+                  <h3 class="title"></h3>
+                </aside>
+              </li>
+          </template> 
       </div>
 
       <div class="items2">
@@ -52,22 +56,23 @@
             <div id="mugs"><img src="assets/img/boston-mugs.png" alt="two mugs"></div>
             <div id ="crockpot"><img src="assets/img/crockpot.png" alt="a red crockpot"></div>
             <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"></ul>
-          <template id="image-block">
-            <li>
-              <figure class="image-block">
-                <picture>
-                  <source class="image-display">
-                  <img class="image" draggable="true">
-                </picture>
-              </figure>
-            </li>
-          </template>
+            <template id="image-block">
+                <li class="image-block">
+                   <figure>
+                      <img class="image-thumb">
+                   </figure>
+                  </figure>
+                  <aside>
+                    <img class="image">
+                    <h3 class="title"></h3>
+                  </aside>
+                </li>
+            </template> 
           </div> 
     </div>
     
         <div class="hover-title"><a href="hellskitchen.html"><h1>Move</h1></a></div>
         <div class="hover-image"><img src="assets/img/box-open.png" id="boxopen" alt="open cardboard box"></div>
     
-    <script src="index.js"></script>
   </body>
 </html>

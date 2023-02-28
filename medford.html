@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="medford.css">
     <script defer src="script.js"></script>
+    <script defer src="main.js"></script>
+
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>">
 
@@ -32,16 +34,18 @@
     <div class="items">
       <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"></ul>
       <template id="image-block">
-          <li>
-             <figure class="image-block">
-              <picture>
-                <source class="image-display">
-                <img class="image" id="image" draggable="true">
-              </picture>
+          <li class="image-block">
+             <figure>
+                <img class="image-thumb">
+             </figure>
             </figure>
+            <aside>
+              <img class="image">
+              <h3 class="title"></h3>
+            </aside>
           </li>
       </template>  
-    </div>
+      </div>
 
     <div class="room">
       <p>Dorm</p>

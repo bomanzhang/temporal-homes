@@ -18,6 +18,15 @@
   .items3 { grid-area: items3; }
   .items4 {grid-area:items4;}
 
+
+.image-thumb {
+  width: 25vh;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
 /* bedroom */ 
 
 .items1 img {border: 1px solid #ccc;}
@@ -117,36 +126,33 @@
 .room4 ul > li:nth-child(n + 8):nth-child(-n + 18) {display:none;}
 .room4 ul > li:nth-child(n+21) {display:none;}
 
-img {
-    display: inline-block;
-    width: 200px;
-    margin: 0.5em;
-}
-
 /* bedroom static images */
 
 #hisbed img {
-  display: relative;
+  display: inline;
+  float: left;
+  padding-left: 1em;
   width: 70% !important;
   border: none !important;
 }
 
 #bedtable img {
   display: relative;
+  float:right;
+  padding-right: 1em;
   width: 20%;
   border: none !important;
 }
 
 #malesofa img {
+  display: inline;
+  float: left;
   width: 60% !important;
   border: none !important;
 }
-#malesofa {
-  display: relative;
-}
 
 #weights img {
-  display: relative;
+  display: inline;
   width: 20% !important;
   float:right;
   padding-right: 10px;
@@ -154,39 +160,56 @@ img {
 }
 
 #hdtv img {
-  display: relative;
+  display: inline;
+  float: right;
   width: 50% !important;
   border: none !important;
 }
 
 /* kitchen static images */
 #pots img {
-  display: inline-block;
+  display: inline;
   width: 50% !important;
   float: right;
+  border: none !important;
+
 }
 
 #coffeemachine img {
-  display: relative;
+  display: inline;
+  float: left;
+  padding-left: 1em;
   width: 30% !important;
+  border: none !important;
+
 }
 
 /*bathroom static images */
 #aesop img {
-  display: inline-block;
+  display: inline;
   width: 10% !important;
   float: right;
+  padding-right: 1em;
+  border: none !important;
+
 }
 
 #towels img {
-  display: relative;
+  display: inline;
+  float: left;
+  padding-left: 1em;
   width: 30% !important;
+  border: none !important;
+
 }
 
 #shave img {
-  display: relative;
+  display: inline;
   width: 10% !important;
+  border: none !important;
+
 }
+
 
 @media only screen and (max-width:768px) and (min-width:200px) {
 
